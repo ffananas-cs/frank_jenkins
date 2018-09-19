@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo "BUILD" 
+                echo "From REPO BUILD" 
             }
         }
         stage('Test') { 
