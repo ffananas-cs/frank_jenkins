@@ -51,17 +51,17 @@ pipeline {
                 echo "Code quality check execution steps here."
             }
         }
-        stage('App Deploy to Ephemeral Env') { 
+        stage('App Deploy to Ephemeral Env1') { 
             steps {
                 echo "Code quality check execution steps here."
             }
         }
-        stage('App Deploy to Ephemeral Env') { 
+        stage('App Deploy to Ephemeral Env2') { 
             steps {
                 echo "Code quality check execution steps here."
             }
         }
-        stage('App Deploy to Ephemeral Env') { 
+        stage('App Deploy to Ephemeral Env3') { 
             steps {
                 echo "Code quality check execution steps here."
             }
