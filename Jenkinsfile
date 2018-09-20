@@ -1,19 +1,69 @@
 pipeline {
     agent none 
     stages {
-        stage('Build') { 
+        stage('Build Code') { 
             steps {
-                echo "From REPO BUILD" 
+                echo "Build code steps here."
             }
         }
-        stage('Test') { 
+        stage('Unit Tests') { 
             steps {
-                echo "TEST"
+                echo "Unit test execution steps here."
             }
         }
-        stage('Deploy') { 
+        stage('Code Quality Check') { 
             steps {
-                echo "DEPLOY"
+                echo "Code quality check execution steps here."
+            }
+        }
+        stage('Security Tests CI') { 
+            steps {
+                echo "Security test for CI execution steps here."
+            }
+        }
+        stage('Build Image') { 
+            steps {
+                echo "Build image execution steps here."
+            }
+        }
+        stage('Tag Image') { 
+            steps {
+                echo "Tag image execution steps here."
+            }
+        }
+        stage('Image Security Scan') { 
+            steps {
+                echo "Container security tests execution steps here."
+            }
+        }
+        stage('Push Image to Repository') { 
+            steps {
+                echo "Code quality check execution steps here."
+            }
+        }
+        stage('Ephemeral Env Build') { 
+            steps {
+                echo "Code quality check execution steps here."
+            }
+        }
+        stage('App Deploy to Ephemeral Env') { 
+            steps {
+                echo "Code quality check execution steps here."
+            }
+        }
+        stage('App Deploy to Ephemeral Env') { 
+            steps {
+                echo "Code quality check execution steps here."
+            }
+        }
+        stage('App Deploy to Ephemeral Env') { 
+            steps {
+                echo "Code quality check execution steps here."
+            }
+        }
+        stage('App Deploy to Ephemeral Env') { 
+            steps {
+                echo "Code quality check execution steps here."
             }
         }
     }
