@@ -6,19 +6,18 @@ pipeline {
                 echo "Build code steps here."
             }
         }
-        stage('Unit Tests') { 
-            steps {
-                echo "Unit test execution steps here."
-            }
-        }
-        stage('Code Quality Check') { 
-            steps {
-                echo "Code quality check execution steps here."
-            }
-        }
-        stage('Security Tests CI') { 
-            steps {
-                echo "Security test for CI execution steps here."
+        stage('CI Basics') { 
+            parallel {
+                stage('Unit Tests') { 
+                    steps {
+                        echo "Unit test execution steps here."
+                    }
+                }
+                stage('Code Quality Check') { 
+                    steps {
+                        echo "Code quality check execution steps here."
+                    }
+                }
             }
         }
         stage('Build Image') { 
