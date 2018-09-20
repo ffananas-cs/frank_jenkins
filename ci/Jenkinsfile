@@ -32,7 +32,7 @@ pipeline {
         }
         stage('Image Security Scan') { 
             steps {
-                echo "Container security tests execution steps here."
+                echo "Image security scan execution steps here."
             }
         }
         stage('Push Image to Repository') { 
