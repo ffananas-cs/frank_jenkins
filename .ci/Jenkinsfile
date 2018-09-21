@@ -37,27 +37,27 @@ pipeline {
         }
         stage('Push Image to Repository') { 
             steps {
-                echo "Code quality check execution steps here."
+                echo "Push image to artifact repository execution steps here."
             }
         }
-        stage('Ephemeral Env Build') { 
+        stage('Build Ephemeral Env') { 
             steps {
-                echo "Code quality check execution steps here."
+                echo "Build ephemeral environment execution steps here."
             }
         }
         stage('App Deploy to Ephemeral Env') { 
             steps {
-                echo "Code quality check execution steps here."
+                echo "Application deployment to the ephemeral environment execution steps here."
             }
         }
         stage('App Integration Tests') { 
             steps {
-                echo "Code quality check execution steps here."
+                echo "Application integration tests execution steps here."
             }
         }
         stage('Destroy Ephemeral Env') { 
             steps {
-                echo "Code quality check execution steps here."
+                echo "Destroy ephemeral environment execution steps here."
             }
         }
     }
