@@ -6,6 +6,7 @@ pipeline {
                 echo "Build code steps here."
             }
         }
+//New comment
         stage('CI Basics') { 
             parallel {
                 stage('Unit Tests') { 
